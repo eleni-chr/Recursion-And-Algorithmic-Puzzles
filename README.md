@@ -11,6 +11,8 @@ This is a recursive function that finds the maximum element in a vector. The sol
 
 The function takes an odd positive integer n as an input and computes the sum of all the elements in the two diagonals of the n-by-n spiral matrix.
 
+![image](https://github.com/eleni-chr/Recursion-And-Algorithmic-Puzzles/blob/master/spiral_matrix.png)
+
 ## move_me
 
 The first input argument v is a row-vector, while the second input argument a is a scalar. The function moves every element of v that is equal to a to the end of the vector. If a is omitted, the function moves occurrences of zeros.
