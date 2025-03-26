@@ -37,3 +37,24 @@ Find the largest subset of people who all follow each other on a social network.
 Given a social network, this function finds the largest clique, that is, the largest subset of people who all follow each other. The data structure that contains the social network is set up as follows: People in the social network are identified by unique IDs, consecutive integers from 1 to N. Who follows who is captured in a cell array called sn: the iith element of sn is a vector that contains a list of IDs the person with ID ii follows. These lists are ordered in ascending order by ID. Note that the follows relationship is not necessarily symmetrical: if person A follows person B, person B may or may not follow person A.
 
 Example input is provided as the file sn.mat.
+
+## grader
+Compare the results of two functions.
+
+This function tests two other functions by calling them repeatedly with various input arguments and comparing the results. The inputs to the grader function are two function handles followed by a variable number of additional input arguments. The grader function calls the two other functions with each of the supplied input arguments one by one. If the results match for each input argument, the grader function returns logical true. Otherwise, it returns false. Here are a few sample runs using built-in functions:
+
+grader(@sin,@max,0)
+
+ans =  logical 1
+
+
+
+grader(@sin,@max,0,1)
+
+ans =  logical 0
+
+
+
+grader(@cos,@cos,-pi,0,pi,[0:0.1:1])
+
+ans =  logical 1
